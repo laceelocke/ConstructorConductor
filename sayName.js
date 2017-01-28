@@ -1,7 +1,21 @@
 //Create a Person constructor that accepts name and age as parameters and sets those properties accordingly in the Constructor.
 
-  //code here
+var Person = function(name, age){
+  this.name = name;
+  this.age = '';
+};
 
+var persons = [];
+
+persons.push(
+  new Person('Lacee', 33),
+  new Person('Ella', 4),
+  new Person('Hayden', 3)
+);
+
+Person.prototype.sayName = function() {
+  alert(this.name);
+};
 
 //Now create three instances of Person with data you make up
 
